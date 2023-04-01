@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    {% block menu %}
+    <button class="button2">
+        <a href="/" class="hyperlink1">Start Over</a>
+        {% if madLib %}
+            <a href="/refresh" class="hyperlink2">Reload {{madLib}}</a>
+        {% endif %}
+        {% endblock menu %}
+    </button>
+</body>
+</html>
